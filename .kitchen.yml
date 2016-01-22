@@ -1,19 +1,19 @@
----
 driver:
   name: vagrant
-  require_chef_omnibus: true
   customize:
-    memory: 2048
+    memory: 512
 
 provisioner:
   name: chef_zero
+  require_chef_omnibus: true
 
 platforms:
   - name: ubuntu-14.04
-    driver:
-      box: box-cutter/ubuntu1404
+    driver_config:
+      box: ubuntu-14.04
+      box_url: https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
 
 suites:
-  - name: default
-    run_list:
-      - recipe[bosh-jumpbox::default]
+- name: default
+  run_list:
+  - recipe[bosh-jumpbox::default]
