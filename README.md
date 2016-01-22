@@ -1,5 +1,6 @@
 bosh-jumpbox Cookbook
 =============================
+[![Build Status](https://travis-ci.org/Infra-Red/bosh-jumpbox.svg?branch=master)](https://travis-ci.org/Infra-Red/bosh-jumpbox)
 TODO: Enter the cookbook description here.
 
 e.g.
