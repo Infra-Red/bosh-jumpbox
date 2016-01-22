@@ -19,4 +19,4 @@ platforms:
 
 suites:
 - name: default
-  run_list: bosh-jumbox::default
+  run_list: bosh-jumpbox::default
