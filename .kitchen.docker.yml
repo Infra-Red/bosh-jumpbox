@@ -6,7 +6,6 @@ driver:
   # privileged is required otherwise the container doesn't boot right
   privileged: true
 
-platforms:
 - name: ubuntu-14.04
   driver:
     image: ubuntu-upstart:14.04
@@ -19,5 +18,4 @@ platforms:
 
 suites:
 - name: default
-  run_list:
-  - recipe[bosh-jumbox]
+  run_list: bosh-jumbox::default
