@@ -37,13 +37,14 @@ ark 'spiff' do
   action :cherry_pick
 end
 
-node.override['go']['packages'] = ['github.com/geofffranks/spruce']
+node.override['go']['packages'] = [
+  'github.com/geofffranks/spruce'
+]
 
 include_recipe 'golang::packages'
 
 gems = [
-  'rubygems-update', 'bundler', 'fog', 'bosh_cli',
-  'bosh-workspace', 'cf-uaac'
+  'rubygems-update', 'bundler', 'bosh_cli', 'bosh-workspace', 'cf-uaac'
 ]
 
 gems.each do |gem|
