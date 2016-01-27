@@ -22,15 +22,7 @@
 include_recipe 'apt'
 
 packages = [
-  'vim', 'zip', 'unzip', 'curl', 'wget', 'unzip', 'git', 'libxml2-dev',
-  'libsqlite3-dev', 'libxslt1-dev', 'libpq-dev', 'libmysqlclient-dev',
-  'zlib1g-dev', 'cmake', 'libcurl4-openssl-dev', 'build-essential', 'jq',
-  'libreadline6-dev', 'zsh', 'mercurial', 'libssl-dev', 'lsof', 'strace',
-  'tcpdump', 'libcurl3', 'bison', 'libgmp-dev', 'libxml2',
-  'libxslt1.1', 'rsync', 'libbz2-dev', 'uuid-dev', 'libgcrypt11-dev', 'bzr',
-  'ca-certificates', 'zlib1g', 'readline-common', 'python-psycopg2',
-  'autoconf', 'libyaml-dev', 'libncurses5-dev', 'libffi-dev', 'libgdbm3',
-  'libgdbm-dev', 'ruby1.9.1-dev', 'ruby-dev'
+  'vim', 'zip', 'unzip', 'curl', 'wget', 'unzip', 'git', 'cmake '
 ]
 
 packages.each do |pkg|
