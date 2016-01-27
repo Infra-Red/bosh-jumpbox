@@ -21,9 +21,7 @@
 
 include_recipe 'apt'
 
-packages = [
-  'vim', 'zip', 'unzip', 'curl', 'wget', 'unzip', 'git', 'cmake'
-]
+packages = %w( vim zip unzip curl wget unzip git cmake )
 
 packages.each do |pkg|
   package pkg do
