@@ -1,69 +1,31 @@
-bosh-jumpbox Cookbook
+Bosh-Jumpbox Cookbook
 =============================
 [![Build Status](https://travis-ci.org/Infra-Red/bosh-jumpbox.svg?branch=master)](https://travis-ci.org/Infra-Red/bosh-jumpbox)
-TODO: Enter the cookbook description here.
 
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+Set of recipes for provisioning BOSH [Jumpbox](https://bosh.io/docs/terminology.html#jumpbox).
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+- **[ChefDK 0.10.0](https://github.com/chef/chef-dk) or higher**
 
-e.g.
-#### packages
-- `toaster` - bosh-jumpbox needs toaster to brown your bagel.
-
-Attributes
-----------
-TODO: List your cookbook attributes here.
-
-e.g.
-#### bosh-jumpbox::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['bosh-jumpbox']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+Packages included
+------------
+- bosh (latest)
+- bosh-init (0.0.81)
+- bosh-workspace (latest)
+- cf-cli (6.15.0)
+- direnv (2.6.0)
+- ruby (2.2.1)
+- spiff (1.0.7)
+- spruce (latest)
+- uaac (latest)
 
 Usage
------
-#### bosh-jumpbox::default
-TODO: Write usage instructions for each cookbook.
-
-e.g.
-Just include `bosh-jumpbox` in your node's `run_list`:
-
-```json
-{
-  "name":"my_node",
-  "run_list": [
-    "recipe[bosh-jumpbox]"
-  ]
-}
-```
-
-Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
+How to provision VM using Chef-Zero:
 
-e.g.
-1. Fork the repository on Github
-2. Create a named feature branch (like `add_component_x`)
-3. Write your change
-4. Write tests for your change (if applicable)
-5. Run the tests, ensuring they all pass
-6. Submit a Pull Request using Github
-
-License and Authors
--------------------
-Authors: TODO: List authors
+```bash
+git clone https://github.com/Infra-Red/bosh-jumpbox.git ~/.chef-repo/cookbooks/bosh-jumpbox
+cd ~/.chef-repo/cookbooks/bosh-jumpbox && berks vendor ../
+cd ~/.chef-repo/cookbooks/ && sudo chef-client -z -o bosh-jumpbox
+```
