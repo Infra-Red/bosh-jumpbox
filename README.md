@@ -10,7 +10,7 @@ Requirements
 
 Packages included
 ------------
-- bosh (latest)
+- bosh_cli (latest)
 - bosh-init (0.0.81)
 - bosh-workspace (latest)
 - cf-cli (6.15.0)
