@@ -25,6 +25,7 @@ Usage
 How to provision VM using Chef-Zero:
 
 ```bash
+chef generate repo ~/.chef-repo
 git clone https://github.com/Infra-Red/bosh-jumpbox.git ~/.chef-repo/cookbooks/bosh-jumpbox
 cd ~/.chef-repo/cookbooks/bosh-jumpbox && berks vendor ../
 cd ~/.chef-repo/cookbooks/ && sudo chef-client -z -o bosh-jumpbox
