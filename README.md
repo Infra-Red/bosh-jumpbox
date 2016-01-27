@@ -4,9 +4,18 @@ Bosh-Jumpbox Cookbook
 
 Set of recipes for provisioning BOSH [Jumpbox](https://bosh.io/docs/terminology.html#jumpbox).
 
-Requirements
-------------
+## Requirements
+### Platform
+- Ubuntu (14.04+)
+
+### Chef
 - **[ChefDK 0.10.0](https://github.com/chef/chef-dk) or higher**
+
+### Cookbooks
+- [apt](https://github.com/chef-cookbooks/apt)
+- [ark](https://github.com/burtlo/ark)
+- [golang](https://github.com/NOX73/chef-golang)
+- [rvm_sl](https://github.com/dsaenztagarro/rvm_sl)
 
 Packages included
 ------------
