@@ -40,7 +40,7 @@ packages.each do |pkg|
   end
 end
 
-node.override['ruby-ng']['ruby_version'] = '2.3'
+node.override['ruby-ng']['ruby_version'] = '2.2'
 
 include_recipe 'ark'
 include_recipe 'golang'
