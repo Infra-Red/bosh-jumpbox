@@ -24,7 +24,7 @@ Packages included
 - bosh-workspace (latest)
 - cf-cli (6.15.0)
 - direnv (2.6.0)
-- ruby (2.2.1)
+- ruby (2.2.4)
 - spiff (1.0.7)
 - spruce (latest)
 - uaac (latest)

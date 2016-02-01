@@ -21,7 +21,18 @@
 
 include_recipe 'apt'
 
-packages = %w( vim zip unzip curl wget unzip git cmake )
+packages = %w(vim
+              zip
+              unzip
+              curl
+              wget
+              git
+              cmake
+              make
+              libreadline6-dev
+              zlib1g-dev
+              libssl-dev
+              libgmp3-dev)
 
 packages.each do |pkg|
   package pkg do
@@ -29,15 +40,11 @@ packages.each do |pkg|
   end
 end
 
-include_recipe 'rvm_sl::user_install'
+node.override['ruby-ng']['ruby_version'] = '2.2'
+
 include_recipe 'ark'
 include_recipe 'golang'
-
-rvm_rubies node['ruby']['version'] do
-  default true
-  home node['rvm']['user']['home']
-  user_name node['rvm']['user']['name']
-end
+include_recipe 'ruby-ng::dev'
 
 remote_file node['direnv']['path'] do
   source node['direnv']['release']

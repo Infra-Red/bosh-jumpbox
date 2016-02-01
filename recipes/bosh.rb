@@ -48,8 +48,8 @@ gems = [
 ]
 
 gems.each do |gem|
-  rvm_gem gem do
-    ruby_version node['ruby']['version']
+  gem_package gem do
+    action :upgrade
   end
 end
 
