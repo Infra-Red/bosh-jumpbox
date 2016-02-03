@@ -32,7 +32,8 @@ packages = %w(vim
               libreadline6-dev
               zlib1g-dev
               libssl-dev
-              libgmp3-dev)
+              libgmp3-dev
+	            python-pip)
 
 packages.each do |pkg|
   package pkg do
