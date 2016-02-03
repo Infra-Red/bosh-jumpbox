@@ -33,7 +33,7 @@ packages = %w(vim
               zlib1g-dev
               libssl-dev
               libgmp3-dev
-	            python-pip)
+              python-pip)
 
 packages.each do |pkg|
   package pkg do
