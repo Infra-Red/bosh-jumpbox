@@ -15,7 +15,7 @@ Set of recipes for provisioning BOSH [Jumpbox](https://bosh.io/docs/terminology.
 - [apt](https://github.com/chef-cookbooks/apt)
 - [ark](https://github.com/burtlo/ark)
 - [golang](https://github.com/NOX73/chef-golang)
-- [rvm_sl](https://github.com/dsaenztagarro/rvm_sl)
+- [ruby-ng](https://github.com/3ofcoins/chef-cookbook-ruby-ng)
 
 Packages included
 ------------
