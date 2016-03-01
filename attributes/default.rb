@@ -31,3 +31,6 @@ default['direnv']['release'] = 'https://github.com/direnv/direnv/releases/downlo
 default['spiff']['checksum'] = 'a34ee47a75dee89b5195d5901a4230105a5e8249b57b1c63e1c982afacfbc627'
 default['spiff']['path'] = '/usr/local/bin/'
 default['spiff']['release'] = 'https://github.com/cloudfoundry-incubator/spiff/releases/download/v1.0.7/spiff_linux_amd64.zip'
+default['spruce']['checksum'] = '2eeb63e60387ddd09bdb32b106b60d4755bf7d3fc90fd2bd1b3d6272f5efe46e'
+default['spruce']['path'] = '/usr/local/bin/spruce'
+default['spruce']['release'] = 'https://github.com/geofffranks/spruce/releases/download/v1.1.0/spruce-linux-amd64'

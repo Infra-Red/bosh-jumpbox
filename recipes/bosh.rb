@@ -37,11 +37,14 @@ ark 'spiff' do
   action :cherry_pick
 end
 
-node.override['go']['packages'] = [
-  'github.com/geofffranks/spruce'
-]
-
-include_recipe 'golang::packages'
+remote_file node['spruce']['path'] do
+  source node['spruce']['release']
+  owner 'root'
+  group 'root'
+  mode '0755'
+  checksum node['spruce']['checksum']
+  action :create
+end
 
 gems = [
   'rubygems-update', 'bundler', 'bosh_cli', 'bosh-workspace', 'cf-uaac'
