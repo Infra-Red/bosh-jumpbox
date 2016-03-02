@@ -30,7 +30,7 @@ Packages included
 - direnv (2.6.0)
 - ruby (2.2.4)
 - spiff (1.0.7)
-- spruce (1.1.0)
+- spruce (1.1.2)
 - uaac (latest)
 
 Usage
