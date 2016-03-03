@@ -19,7 +19,8 @@ curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -c current -P chefdk
 - [apt](https://github.com/chef-cookbooks/apt)
 - [ark](https://github.com/burtlo/ark)
 - [golang](https://github.com/NOX73/chef-golang)
-- [ruby-ng](https://github.com/3ofcoins/chef-cookbook-ruby-ng)
+- [rvm_sl](https://github.com/dsaenztagarro/rvm_sl)
+- [terraform](https://github.com/rosstimson/chef-terraform.git)
 
 Packages included
 ------------
