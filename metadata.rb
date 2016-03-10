@@ -10,7 +10,6 @@ depends 'apt'
 depends 'ark'
 depends 'golang'
 depends 'ruby-ng'
-depends 'rvm_sl'
 depends 'terraform'
 
 supports 'ubuntu', '>= 14.04'
