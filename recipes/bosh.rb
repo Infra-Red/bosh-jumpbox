@@ -51,10 +51,8 @@ gems = [
 ]
 
 gems.each do |gem|
-  rvm_gem gem do
-    home node['rvm']['user']['home']
-    ruby_version node['rvm']['ruby_version']
-    user_name node['rvm']['user']['name']
+  gem_package gem do
+    action :upgrade
   end
 end
 

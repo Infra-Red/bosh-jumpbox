@@ -42,16 +42,12 @@ packages.each do |pkg|
   end
 end
 
+node.override['ruby-ng']['ruby_version'] = '2.2'
+
 include_recipe 'ark'
 include_recipe 'golang'
-include_recipe 'rvm_sl::user_install'
-include_recipe 'terraform'
-
-rvm_rubies node['rvm']['ruby_version'] do
-  default true
-  home node['rvm']['user']['home']
-  user_name node['rvm']['user']['name']
-end
+#include_recipe 'terraform'
+include_recipe 'ruby-ng::dev'
 
 remote_file node['direnv']['path'] do
   source node['direnv']['release']

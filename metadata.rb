@@ -9,6 +9,7 @@ version          '0.1.0'
 depends 'apt'
 depends 'ark'
 depends 'golang'
+depends 'ruby-ng'
 depends 'rvm_sl'
 depends 'terraform'
 
