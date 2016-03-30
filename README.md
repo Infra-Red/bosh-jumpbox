@@ -12,7 +12,7 @@ Set of recipes for provisioning BOSH [Jumpbox](https://bosh.io/docs/terminology.
 - **[ChefDK 0.10.0](https://github.com/chef/chef-dk) or higher**
 
 ```bash
-curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -c current -P chefdk -v 0.11.2
+curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -c current -P chefdk -v 0.12.0
 ```
 
 ### Cookbooks
@@ -32,6 +32,7 @@ Packages included
 - ruby (2.2.4)
 - spiff (1.0.7)
 - spruce (1.1.2)
+- terraform (0.6.11)
 - uaac (latest)
 
 Usage
