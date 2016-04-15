@@ -48,7 +48,6 @@ end
 bash 'direnv_shell' do
   code <<-EOH
   echo 'eval "$(direnv hook bash)"' >> /home/ubuntu/.bashrc
-  echo 'eval "$(direnv hook zsh)"' >> /home/ubuntu/.zshrc
   EOH
   user 'ubuntu'
   action :nothing
