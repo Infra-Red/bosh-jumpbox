@@ -12,7 +12,7 @@ Set of recipes for provisioning BOSH [Jumpbox](https://bosh.io/docs/terminology.
 - **[ChefDK 0.10.0](https://github.com/chef/chef-dk) or higher**
 
 ```bash
-curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -c current -P chefdk -v 0.12.0
+curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -c current -P chefdk
 ```
 
 ### Cookbooks
@@ -27,8 +27,8 @@ Packages included
 - bosh_cli (latest)
 - bosh-init (0.0.81)
 - bosh-workspace (latest)
-- cf-cli (6.16.1)
-- direnv (2.6.0)
+- cf-cli (6.17.0)
+- direnv (2.8.1)
 - ruby (2.2.4)
 - spiff (1.0.7)
 - spruce (1.1.2)
