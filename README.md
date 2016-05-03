@@ -25,7 +25,7 @@ curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -c current -P chefdk
 Packages included
 ------------
 - bosh_cli (latest)
-- bosh-init (0.0.81)
+- bosh-init (0.0.88)
 - bosh-workspace (latest)
 - cf-cli (6.17.0)
 - direnv (2.8.1)
