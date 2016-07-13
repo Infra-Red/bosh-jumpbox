@@ -58,7 +58,7 @@ end
 
 remote_file "#{Chef::Config['file_cache_path']}/cf-cli-installer-#{node['cf-cli']['version']}.deb" do
   source node['cf-cli']['release']
-  mode 0644
+  mode '0644'
   checksum node['cf-cli']['checksum']
 end
 
