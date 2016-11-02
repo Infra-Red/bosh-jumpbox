@@ -19,10 +19,10 @@
 # limitations under the License.
 #
 
-default['bosh-init']['checksum'] = '7c2ccdf2e4e108f5a6659daa89580c5f54a0efd400197d560f5bcd01d9c6c471'
+default['bosh-init']['checksum'] = '1800652511bcad3864d3062b19d1ac194f4176e1f9a1d3b136499e4aef15db34'
 default['bosh-init']['path'] = '/usr/local/bin/bosh-init'
-default['bosh-init']['release'] = 'https://s3.amazonaws.com/bosh-init-artifacts/bosh-init-0.0.95-linux-amd64'
-default['cf-cli']['checksum'] = 'faee309d0481ee5d55288c1230d5d6e04fc47ccbed2d7c0af1e71d205e59ba3e'
+default['bosh-init']['release'] = 'https://s3.amazonaws.com/bosh-init-artifacts/bosh-init-0.0.98-linux-amd64'
+default['cf-cli']['checksum'] = 'b8aa8f42ebdbf41d911136905144b3a380a72b8d651f4e127185f4d49b67b89e'
 default['cf-cli']['release'] = 'http://go-cli.s3-website-us-east-1.amazonaws.com/releases/v6.21.1/cf-cli-installer_6.21.1_x86-64.deb'
 default['cf-cli']['version'] = '6.21.1'
 default['direnv']['checksum'] = '9c221407b2fa5d86a9bd75b6c715e67f10989d9b6ffc3bbd001ee9ca8d32ce77'
